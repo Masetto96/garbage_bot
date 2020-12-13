@@ -1,7 +1,7 @@
+secrets.py
+
 # -*- mode: gitignore; -*-
 *~
 \#*\#
 .\#*
 *.out
-
-secrets.py
