@@ -4,8 +4,6 @@ import logging
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 
 
-#bot = telegram.Bot(token='1269026033:AAEhLjwfUXgxZgCeBn_760qTE_lFYC2I2AY')
-
 
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO
@@ -25,7 +23,7 @@ def start(context) -> None:
 
 def main():
     today = date.today()
-    updater = Updater("1269026033:AAEhLjwfUXgxZgCeBn_760qTE_lFYC2I2AY", use_context=True)
+    updater = Updater("", use_context=True)
     dispatcher = updater.dispatcher
     dispatcher.add_handler(CommandHandler("ciao", start))
     #dispatcher.add_handler(CommandHandler("help", help_command))
@@ -33,9 +31,9 @@ def main():
     if today.weekday() == 6:
         bot.send_message(chat_id=-443613216, text="More and more bullshit coming")
 
-        #bot.send_message(chat_id=-443613216, text="Today is Sunday. Bring out the trash please")
-        #bot.send_document(chat_id=-443613216, document=open("calendar.pdf", "rb"))
-        #bot.send_dice(chat_id=-443613216)
+        #bot.send_message(chat_id=-, text="Today is Sunday. Bring out the trash please")
+        #bot.send_document(chat_id=-, document=open("calendar.pdf", "rb"))
+        #bot.send_dice(chat_id=-)
         #bot.pin_chat_mupdater = Updater("TOKEN", use_context=True)essage(chat_id=-443613216, message_id=)
 
 
