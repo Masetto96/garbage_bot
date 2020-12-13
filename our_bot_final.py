@@ -5,7 +5,7 @@ import logging
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 
 
-#bot = telegram.Bot(token='1269026033:AAEhLjwfUXgxZgCeBn_760qTE_lFYC2I2AY')
+#bot = telegram.Bot(token='')
 
 
 logging.basicConfig(
@@ -32,7 +32,7 @@ def help(update: Update, context: CallbackContext) -> None:
 
 
 
-updater = Updater("1269026033:AAEhLjwfUXgxZgCeBn_760qTE_lFYC2I2AY", use_context=True)
+updater = Updater("", use_context=True)
 bot = updater.bot
 
 dispatcher = updater.dispatcher
